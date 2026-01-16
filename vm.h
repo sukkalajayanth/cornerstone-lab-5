@@ -54,5 +54,6 @@ void vm_init(VM *vm);
 bool vm_load_program(VM *vm, const char *filename);
 void vm_run(VM *vm);
 void vm_dump_stack(const VM *vm);
+void gc(VM *vm);
 
 #endif // VM_H
