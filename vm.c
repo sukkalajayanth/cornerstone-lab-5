@@ -54,3 +54,7 @@ static void sweep(VM *vm) {
         }
     }
 }
+void gc(VM *vm) {
+    mark_roots(vm);
+    sweep(vm);
+}
